@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6A993421AE6BD9800B9CBE5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6A993411AE6BD9800B9CBE5 /* Info.plist */; };
+		A6A993441AE6BEDF00B9CBE5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A993431AE6BEDF00B9CBE5 /* Default-568h@2x.png */; };
+		A6A993481AE6CBF300B9CBE5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A993471AE6CBF300B9CBE5 /* MessageUI.framework */; };
 		A6E4840B1AE6431D00AC2539 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E4840A1AE6431D00AC2539 /* main.m */; };
 		A6E4840E1AE6431D00AC2539 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E4840D1AE6431D00AC2539 /* AppDelegate.m */; };
 		A6E484111AE6431D00AC2539 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E484101AE6431D00AC2539 /* ViewController.m */; };
@@ -14,6 +17,11 @@
 		A6E484161AE6431D00AC2539 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E484151AE6431D00AC2539 /* Images.xcassets */; };
 		A6E484191AE6431D00AC2539 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E484171AE6431D00AC2539 /* LaunchScreen.xib */; };
 		A6E484251AE6431D00AC2539 /* AlertMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E484241AE6431D00AC2539 /* AlertMapTests.m */; };
+		A6E4842F1AE6450C00AC2539 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E4842E1AE6450C00AC2539 /* MapKit.framework */; };
+		A6E484311AE6451B00AC2539 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E484301AE6451B00AC2539 /* CoreLocation.framework */; };
+		A6E484331AE64C4500AC2539 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E484321AE64C4500AC2539 /* Foundation.framework */; };
+		A6E484351AE64C4E00AC2539 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E484341AE64C4E00AC2539 /* CoreGraphics.framework */; };
+		A6E484371AE64C5700AC2539 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E484361AE64C5700AC2539 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6A993411AE6BD9800B9CBE5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../Mapview_ios8-master/CustomMap/CustomMap/Info.plist"; sourceTree = "<group>"; };
+		A6A993431AE6BEDF00B9CBE5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A6A993471AE6CBF300B9CBE5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		A6E484051AE6431C00AC2539 /* AlertMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6E484091AE6431D00AC2539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6E4840A1AE6431D00AC2539 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6E4840C1AE6431D00AC2539 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6E4840D1AE6431D00AC2539 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +50,11 @@
 		A6E4841E1AE6431D00AC2539 /* AlertMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E484231AE6431D00AC2539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6E484241AE6431D00AC2539 /* AlertMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertMapTests.m; sourceTree = "<group>"; };
+		A6E4842E1AE6450C00AC2539 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A6E484301AE6451B00AC2539 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A6E484321AE64C4500AC2539 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6E484341AE64C4E00AC2539 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A6E484361AE64C5700AC2539 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A993481AE6CBF300B9CBE5 /* MessageUI.framework in Frameworks */,
+				A6E484371AE64C5700AC2539 /* UIKit.framework in Frameworks */,
+				A6E484351AE64C4E00AC2539 /* CoreGraphics.framework in Frameworks */,
+				A6E484331AE64C4500AC2539 /* Foundation.framework in Frameworks */,
+				A6E484311AE6451B00AC2539 /* CoreLocation.framework in Frameworks */,
+				A6E4842F1AE6450C00AC2539 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,13 @@
 		A6E483FC1AE6431B00AC2539 = {
 			isa = PBXGroup;
 			children = (
+				A6A993471AE6CBF300B9CBE5 /* MessageUI.framework */,
+				A6A993431AE6BEDF00B9CBE5 /* Default-568h@2x.png */,
+				A6E484361AE64C5700AC2539 /* UIKit.framework */,
+				A6E484341AE64C4E00AC2539 /* CoreGraphics.framework */,
+				A6E484321AE64C4500AC2539 /* Foundation.framework */,
+				A6E484301AE6451B00AC2539 /* CoreLocation.framework */,
+				A6E4842E1AE6450C00AC2539 /* MapKit.framework */,
 				A6E484071AE6431C00AC2539 /* AlertMap */,
 				A6E484211AE6431D00AC2539 /* AlertMapTests */,
 				A6E484061AE6431C00AC2539 /* Products */,
@@ -96,7 +124,7 @@
 		A6E484081AE6431D00AC2539 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A6E484091AE6431D00AC2539 /* Info.plist */,
+				A6A993411AE6BD9800B9CBE5 /* Info.plist */,
 				A6E4840A1AE6431D00AC2539 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -199,8 +227,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A993421AE6BD9800B9CBE5 /* Info.plist in Resources */,
 				A6E484141AE6431D00AC2539 /* Main.storyboard in Resources */,
 				A6E484191AE6431D00AC2539 /* LaunchScreen.xib in Resources */,
+				A6A993441AE6BEDF00B9CBE5 /* Default-568h@2x.png in Resources */,
 				A6E484161AE6431D00AC2539 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AlertMap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/../Mapview_ios8-master/CustomMap/CustomMap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AlertMap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/../Mapview_ios8-master/CustomMap/CustomMap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +442,7 @@
 				A6E4842A1AE6431D00AC2539 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6E4842B1AE6431D00AC2539 /* Build configuration list for PBXNativeTarget "AlertMapTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +451,7 @@
 				A6E4842D1AE6431D00AC2539 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <MapKit/MKAnnotation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MessageUI/MessageUI.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate,  MFMessageComposeViewControllerDelegate>
 
+@property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property(nonatomic, retain) CLLocationManager *locationManager;
+- (IBAction)zoomtocurrentloc:(id)sender;
+- (IBAction)sendSMS:(id)sender;
+- (IBAction)drop_pin:(id)sender;
 
 @end
 
