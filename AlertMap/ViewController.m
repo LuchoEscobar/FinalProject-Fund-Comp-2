@@ -54,18 +54,6 @@
     [self.mapView setScrollEnabled:YES];
 }
 
-#pragma mark Delegate Methods
--(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-    id <MKAnnotation> annotation = [view annotation];
-    if ([annotation isKindOfClass:[MKPointAnnotation class]])
-    {
-        NSLog(@"Clicked Pizza Shop");
-    }
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Disclosure Pressed" message:@"Click Cancel to Go Back" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
-    [alertView show];
-}
-
-
 
 
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
@@ -85,12 +73,11 @@
     region.span.latitudeDelta = spanX;
     region.span.longitudeDelta = spanY;
     [self.mapView setRegion:region animated:YES];
-    //  [self.mapView setCenter:_mapView.userLocation.coordinate animated:YES];
+    //[self.mapView setCenter:_mapView.userLocation.coordinate animated:YES];
 }
 
 #pragma mark Drop Pin
 - (IBAction)drop_pin:(id)sender {
-    
     CLLocationCoordinate2D pin;
     pin.latitude = self.mapView.userLocation.coordinate.latitude;
     pin.longitude = self.mapView.userLocation.coordinate.longitude;
@@ -98,7 +85,10 @@
     MKPointAnnotation *myAnnotation = [[MKPointAnnotation alloc] init];
     myAnnotation.coordinate = pin;
     myAnnotation.title = @"Help";
-    myAnnotation.subtitle = @"I am being robbed";
+    NSString * latitude = [NSString stringWithFormat:@"%.3lf", self.mapView.userLocation.coordinate.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%.3lf", self.mapView.userLocation.coordinate.longitude];
+    
+    myAnnotation.subtitle = [NSString stringWithFormat:@"Latitude:%@ Longitude: %@", latitude, longitude];
     [_mapView addAnnotation:myAnnotation];
     
 }
@@ -112,11 +102,15 @@
         return;
     }
     
+    //coordinate
+    NSString * latitude = [NSString stringWithFormat:@"%.3lf", self.mapView.userLocation.coordinate.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%.3lf", self.mapView.userLocation.coordinate.longitude];
+    
     //set receipients
     NSArray *recipients = [NSArray arrayWithObjects:@"7865270939", nil];
     
     //set message text
-    NSString * message = @"Help. I'm being robbed.";
+    NSString * message = [NSString stringWithFormat:@"Help. My current location is latitude:%@ longitude: %@", latitude, longitude];
     
     MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
     messageController.messageComposeDelegate = self;
@@ -159,4 +153,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 @end
